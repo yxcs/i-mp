@@ -1,0 +1,46 @@
+<view class="wrap">
+  <swiper
+    class="swiper"
+    indicator-dots="{{false}}"
+    autoplay="{{true}}"
+    interval="{{3000}}"
+    duration="{{800}}"
+    vertical="{{true}}"
+    circular="{{true}}">
+    <block wx:for="{{list}}" wx:key="*this">
+      <swiper-item>
+        <view class="swiper-item">
+          <image src="{{item}}" mode="widthFix" class="swiper-item-bg" />
+          <!-- <view class=""></view> -->
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="invitation-txt" style="top: {{topHeight}}px;">
+    <image src="{{inv}}" mode="widthFix" />
+  </view>
+  <view class="too-bar">
+    <view class="top-header" style="height: {{topHeight}}px;"></view>
+    <view class="music {{ isPlay ? '' : 'music-pause' }}" bind:tap="audioPlay">
+      <image class="music-icon" src="../../imgs/icon/music_icon.png" />
+      <image class="music-play" src="../../imgs/icon/music_play.png" />
+    </view>
+    <view class="album" bind:tap="goToAlbum">
+      <view class="album-txt">相册</view>
+    </view>
+    <view class="poster"></view>
+  </view>
+  <view class="main-content">
+    <view class="content-inner">
+      <view class="content-inner-1">
+        <view class="content-title">于晓超 & 王琳</view>
+        <view class="content-desc">谨定于 2022年9月21日 星期三 上午10:00</view>
+        <view class="content-desc">农历 八月二十六 上午十点整 举办婚礼</view>
+        <view class="content-desc">席设 凌云乡三良村五组</view>
+      </view>
+      <view class="we-are">
+        <image src="../../imgs/icon/we.png" />
+      </view>
+    </view>
+  </view>
+</view>
