@@ -159,13 +159,18 @@ Page({
         this.setData({
           isAuth: true,
           userInfo: res.userInfo
+        }, () => {
+          this.openMessageModal()
         })
         wx.setStorageSync('userInfo', res.userInfo)
       }
     });
   },
   openMessageModal() {
-    this.setData({ isModalShow: true })
+    const { userInfo } = this.data
+    if (userInfo && userInfo.nickName) {
+      this.setData({ isModalShow: true })
+    }
   },
   onCloseModal() {
     this.setData({ isModalShow: false })
