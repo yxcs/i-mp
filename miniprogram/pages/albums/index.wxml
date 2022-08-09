@@ -1,0 +1,88 @@
+<view class="wrap">
+  <view class="albums-list-wrap">
+    <view class="albums-list-left">
+      <view class="left-top" bind:tap="goToAlbums" data-type="{{1}}">
+        <image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/album/100001.jpg" mode="aspectFill" />
+        <view class="album-txt">水晶相册</view>
+      </view>
+      <view class="left-bottom" bind:tap="goToAlbums" data-type="{{2}}">
+        <image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/album/100002.jpg" mode="widthFix" />
+        <view class="album-txt">全部照片</view>
+      </view>
+    </view>
+    <view class="albums-list-right" bind:tap="goToAlbums" data-type="{{3}}">
+      <view class="right-top">
+        <image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/album/100003.jpg" mode="widthFix" />
+        <view class="album-txt">莫兰迪册</view>
+      </view>
+      <view class="right-bottom" bind:tap="goToAlbums" data-type="{{4}}">
+        <image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/album/100004.jpg" mode="widthFix" />
+        <view class="album-txt">娘家册</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="video-wrap" bind:tap="goToVideo" data-type="{{5}}">
+    <image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/album/100005.jpg" />
+    <view class="video-txt">婚礼视频</view>
+  </view>
+</view>
+
+<view wx:if="{{showType === 1}}" class="cover-wrap" bind:tap="closeCover">
+  <page-turn list="{{list_1}}" width="750" height="1144" />
+  <view class="video-close-btn">
+    <image bindtap="closeCover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAllBMVEX///8kIyOwsLBLS0s9PT37+/u0tLT19fUrKysnJydDQ0NHR0dJSUklJSU1NTXZ2dlQUFBZWVnBwcHFxcXIyMhAQECZmZm4uLi8vLyKioqbm5vs7OwvLy9VVVWlpaU5OTlXV1ehoaHT09Po6OgyMjI3Nzeenp6oqKirq6vk5OQ8OzvOzs7e3t5/f3+Tk5NhYWFvb28iIiJznQh7AAAAMXRSTlOZ/rPj7JqxnPj76Obk/fKk4Nutq6rqvLCuwruf9t2379y4p6D08Lq2taLtqKPIv9bPXhBALQAAA3RJREFUeNrswQEBAAAAgqD+r26IwAAAAAAAAAAAAICsU19nywkCQRSGW2SQVVEUSYxLEvelKuf9Xy7XPagw5ZTT/Ldu9ZWMHgKymfLIUfvQ6kePkg9yUpGgZ1EyWUZwIRmUO8CipPIBuJBUa8CiZLEBXEjUKunBosTzASeSVQjAnuTUB5xIihSwKKnyCE4kty/AomQ6A+tG7+oPsCgZjTOwInpbfYuSwAcvndDj5EoWOXhfB3qWUIkK+j3+PslB0dNkSn4S8NYVNSVRMh1HmqMcUGPyJHMfvGRKbZImWWzAC7+pXaIkyovBytKA2iZJctVfPDRxyJFUywis2d7onEuRFDNojoLMkiG56vsqLMk0CRLvzr5yn7nkt7avjiQhQ4kK8ow/P14NSERmkksM3lnCdWUuuej7algK+T7MJIGQffWqZLGUsq9ekigvAStLPJJWG8koBW84J3k1SyabCKzzp6Bz3l4y8cGLZZ3ztpLfcQ+s8JOk9kzizbTH0ork9lhyqu0reb9XLSRqnkdgxd8iz3mTZBqD5xckvXuSH31fbUtF4qtLpO+r1pLavlpRN6pJtH117MB1xST320n+/zCQrGXuq2ZJV/aVoSTcU9e6J8lSifcfTeWotQ2oi4XQqzp1zv/Zt6OchKEoCMM/lFrU0po2UKmGKIoEVAz735yp0Qd7jm83F6dhdvCFkNxO5vxkPTcQtT/6d09tf5HR/366/91fDUDS9dQDkKQXyew4BMm6+44agKTrqYcg+doBDEBie+pEUeLsAMYoSt5yZwcgKKn6O4BJmyEo8XtqPcnO66kFJf331SivQFDi7gD0JGljdgCPGYKSV9NTV4CexO2pBSW2p64BPYm7A9CTpOP8aHtqQUl53e+pG0BPUj04e2pBya15X9WAnsTuqVsQlNgdQAOCkl3S76nHIChpbpw9taCknns7AD2JuVe7b1MEJfZerQb0JOY7aroFPYl/ryYoWV9592p6EnOvtllkCEr8ezU9iXuvJihpQ96rWcmKWPlweuqAkiOxsit+v0teMgJKJguipSzMvVowyexAjFjJtIWAks3yiQgxklFeQ0DJ84rIKQvTUweQXL5nxE5ZhL1X6yT7LTFiJfsKCChZcpKUge/VksMdp0nJOed8tgeHBAAAAACC/r/2hBEAAAAAAAAAAACARRR59tksZB0sAAAAAElFTkSuQmCC" />
+  </view>
+</view>
+
+<view wx:if="{{showType === 2}}" class="cover-wrap" bind:tap="closeCover">
+  <swiper
+    class="swiper"
+    indicator-dots="{{false}}"
+    autoplay="{{true}}"
+    interval="{{3000}}"
+    duration="{{500}}"
+    circular="{{true}}">
+    <block wx:for="{{list_2}}" wx:key="*this">
+      <swiper-item>
+        <view bind:tap="previewImage" class="swiper-item" data-index="{{index}}">
+          <image src="{{item}}" mode="widthFix" class="swiper-item-bg" />
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="video-close-btn">
+    <image bindtap="closeCover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAllBMVEX///8kIyOwsLBLS0s9PT37+/u0tLT19fUrKysnJydDQ0NHR0dJSUklJSU1NTXZ2dlQUFBZWVnBwcHFxcXIyMhAQECZmZm4uLi8vLyKioqbm5vs7OwvLy9VVVWlpaU5OTlXV1ehoaHT09Po6OgyMjI3Nzeenp6oqKirq6vk5OQ8OzvOzs7e3t5/f3+Tk5NhYWFvb28iIiJznQh7AAAAMXRSTlOZ/rPj7JqxnPj76Obk/fKk4Nutq6rqvLCuwruf9t2379y4p6D08Lq2taLtqKPIv9bPXhBALQAAA3RJREFUeNrswQEBAAAAgqD+r26IwAAAAAAAAAAAAICsU19nywkCQRSGW2SQVVEUSYxLEvelKuf9Xy7XPagw5ZTT/Ldu9ZWMHgKymfLIUfvQ6kePkg9yUpGgZ1EyWUZwIRmUO8CipPIBuJBUa8CiZLEBXEjUKunBosTzASeSVQjAnuTUB5xIihSwKKnyCE4kty/AomQ6A+tG7+oPsCgZjTOwInpbfYuSwAcvndDj5EoWOXhfB3qWUIkK+j3+PslB0dNkSn4S8NYVNSVRMh1HmqMcUGPyJHMfvGRKbZImWWzAC7+pXaIkyovBytKA2iZJctVfPDRxyJFUywis2d7onEuRFDNojoLMkiG56vsqLMk0CRLvzr5yn7nkt7avjiQhQ4kK8ow/P14NSERmkksM3lnCdWUuuej7algK+T7MJIGQffWqZLGUsq9ekigvAStLPJJWG8koBW84J3k1SyabCKzzp6Bz3l4y8cGLZZ3ztpLfcQ+s8JOk9kzizbTH0ork9lhyqu0reb9XLSRqnkdgxd8iz3mTZBqD5xckvXuSH31fbUtF4qtLpO+r1pLavlpRN6pJtH117MB1xST320n+/zCQrGXuq2ZJV/aVoSTcU9e6J8lSifcfTeWotQ2oi4XQqzp1zv/Zt6OchKEoCMM/lFrU0po2UKmGKIoEVAz735yp0Qd7jm83F6dhdvCFkNxO5vxkPTcQtT/6d09tf5HR/366/91fDUDS9dQDkKQXyew4BMm6+44agKTrqYcg+doBDEBie+pEUeLsAMYoSt5yZwcgKKn6O4BJmyEo8XtqPcnO66kFJf331SivQFDi7gD0JGljdgCPGYKSV9NTV4CexO2pBSW2p64BPYm7A9CTpOP8aHtqQUl53e+pG0BPUj04e2pBya15X9WAnsTuqVsQlNgdQAOCkl3S76nHIChpbpw9taCknns7AD2JuVe7b1MEJfZerQb0JOY7aroFPYl/ryYoWV9592p6EnOvtllkCEr8ezU9iXuvJihpQ96rWcmKWPlweuqAkiOxsit+v0teMgJKJguipSzMvVowyexAjFjJtIWAks3yiQgxklFeQ0DJ84rIKQvTUweQXL5nxE5ZhL1X6yT7LTFiJfsKCChZcpKUge/VksMdp0nJOed8tgeHBAAAAACC/r/2hBEAAAAAAAAAAACARRR59tksZB0sAAAAAElFTkSuQmCC" />
+  </view>
+</view>
+
+<view wx:if="{{showType === 3}}" class="cover-wrap" bind:tap="closeCover">
+  <page-turn list="{{list_3}}" />
+  <view class="v-close-cover-btn">
+      <image bindtap="closeCover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAllBMVEX///8kIyOwsLBLS0s9PT37+/u0tLT19fUrKysnJydDQ0NHR0dJSUklJSU1NTXZ2dlQUFBZWVnBwcHFxcXIyMhAQECZmZm4uLi8vLyKioqbm5vs7OwvLy9VVVWlpaU5OTlXV1ehoaHT09Po6OgyMjI3Nzeenp6oqKirq6vk5OQ8OzvOzs7e3t5/f3+Tk5NhYWFvb28iIiJznQh7AAAAMXRSTlOZ/rPj7JqxnPj76Obk/fKk4Nutq6rqvLCuwruf9t2379y4p6D08Lq2taLtqKPIv9bPXhBALQAAA3RJREFUeNrswQEBAAAAgqD+r26IwAAAAAAAAAAAAICsU19nywkCQRSGW2SQVVEUSYxLEvelKuf9Xy7XPagw5ZTT/Ldu9ZWMHgKymfLIUfvQ6kePkg9yUpGgZ1EyWUZwIRmUO8CipPIBuJBUa8CiZLEBXEjUKunBosTzASeSVQjAnuTUB5xIihSwKKnyCE4kty/AomQ6A+tG7+oPsCgZjTOwInpbfYuSwAcvndDj5EoWOXhfB3qWUIkK+j3+PslB0dNkSn4S8NYVNSVRMh1HmqMcUGPyJHMfvGRKbZImWWzAC7+pXaIkyovBytKA2iZJctVfPDRxyJFUywis2d7onEuRFDNojoLMkiG56vsqLMk0CRLvzr5yn7nkt7avjiQhQ4kK8ow/P14NSERmkksM3lnCdWUuuej7algK+T7MJIGQffWqZLGUsq9ekigvAStLPJJWG8koBW84J3k1SyabCKzzp6Bz3l4y8cGLZZ3ztpLfcQ+s8JOk9kzizbTH0ork9lhyqu0reb9XLSRqnkdgxd8iz3mTZBqD5xckvXuSH31fbUtF4qtLpO+r1pLavlpRN6pJtH117MB1xST320n+/zCQrGXuq2ZJV/aVoSTcU9e6J8lSifcfTeWotQ2oi4XQqzp1zv/Zt6OchKEoCMM/lFrU0po2UKmGKIoEVAz735yp0Qd7jm83F6dhdvCFkNxO5vxkPTcQtT/6d09tf5HR/366/91fDUDS9dQDkKQXyew4BMm6+44agKTrqYcg+doBDEBie+pEUeLsAMYoSt5yZwcgKKn6O4BJmyEo8XtqPcnO66kFJf331SivQFDi7gD0JGljdgCPGYKSV9NTV4CexO2pBSW2p64BPYm7A9CTpOP8aHtqQUl53e+pG0BPUj04e2pBya15X9WAnsTuqVsQlNgdQAOCkl3S76nHIChpbpw9taCknns7AD2JuVe7b1MEJfZerQb0JOY7aroFPYl/ryYoWV9592p6EnOvtllkCEr8ezU9iXuvJihpQ96rWcmKWPlweuqAkiOxsit+v0teMgJKJguipSzMvVowyexAjFjJtIWAks3yiQgxklFeQ0DJ84rIKQvTUweQXL5nxE5ZhL1X6yT7LTFiJfsKCChZcpKUge/VksMdp0nJOed8tgeHBAAAAACC/r/2hBEAAAAAAAAAAACARRR59tksZB0sAAAAAElFTkSuQmCC" />
+  </view>
+</view>
+
+<view wx:if="{{showType === 4}}" class="cover-wrap" bind:tap="closeCover">
+  <page-turn list="{{list_4}}" />
+  <view class="v-close-cover-btn">
+      <image bindtap="closeCover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAllBMVEX///8kIyOwsLBLS0s9PT37+/u0tLT19fUrKysnJydDQ0NHR0dJSUklJSU1NTXZ2dlQUFBZWVnBwcHFxcXIyMhAQECZmZm4uLi8vLyKioqbm5vs7OwvLy9VVVWlpaU5OTlXV1ehoaHT09Po6OgyMjI3Nzeenp6oqKirq6vk5OQ8OzvOzs7e3t5/f3+Tk5NhYWFvb28iIiJznQh7AAAAMXRSTlOZ/rPj7JqxnPj76Obk/fKk4Nutq6rqvLCuwruf9t2379y4p6D08Lq2taLtqKPIv9bPXhBALQAAA3RJREFUeNrswQEBAAAAgqD+r26IwAAAAAAAAAAAAICsU19nywkCQRSGW2SQVVEUSYxLEvelKuf9Xy7XPagw5ZTT/Ldu9ZWMHgKymfLIUfvQ6kePkg9yUpGgZ1EyWUZwIRmUO8CipPIBuJBUa8CiZLEBXEjUKunBosTzASeSVQjAnuTUB5xIihSwKKnyCE4kty/AomQ6A+tG7+oPsCgZjTOwInpbfYuSwAcvndDj5EoWOXhfB3qWUIkK+j3+PslB0dNkSn4S8NYVNSVRMh1HmqMcUGPyJHMfvGRKbZImWWzAC7+pXaIkyovBytKA2iZJctVfPDRxyJFUywis2d7onEuRFDNojoLMkiG56vsqLMk0CRLvzr5yn7nkt7avjiQhQ4kK8ow/P14NSERmkksM3lnCdWUuuej7algK+T7MJIGQffWqZLGUsq9ekigvAStLPJJWG8koBW84J3k1SyabCKzzp6Bz3l4y8cGLZZ3ztpLfcQ+s8JOk9kzizbTH0ork9lhyqu0reb9XLSRqnkdgxd8iz3mTZBqD5xckvXuSH31fbUtF4qtLpO+r1pLavlpRN6pJtH117MB1xST320n+/zCQrGXuq2ZJV/aVoSTcU9e6J8lSifcfTeWotQ2oi4XQqzp1zv/Zt6OchKEoCMM/lFrU0po2UKmGKIoEVAz735yp0Qd7jm83F6dhdvCFkNxO5vxkPTcQtT/6d09tf5HR/366/91fDUDS9dQDkKQXyew4BMm6+44agKTrqYcg+doBDEBie+pEUeLsAMYoSt5yZwcgKKn6O4BJmyEo8XtqPcnO66kFJf331SivQFDi7gD0JGljdgCPGYKSV9NTV4CexO2pBSW2p64BPYm7A9CTpOP8aHtqQUl53e+pG0BPUj04e2pBya15X9WAnsTuqVsQlNgdQAOCkl3S76nHIChpbpw9taCknns7AD2JuVe7b1MEJfZerQb0JOY7aroFPYl/ryYoWV9592p6EnOvtllkCEr8ezU9iXuvJihpQ96rWcmKWPlweuqAkiOxsit+v0teMgJKJguipSzMvVowyexAjFjJtIWAks3yiQgxklFeQ0DJ84rIKQvTUweQXL5nxE5ZhL1X6yT7LTFiJfsKCChZcpKUge/VksMdp0nJOed8tgeHBAAAAACC/r/2hBEAAAAAAAAAAACARRR59tksZB0sAAAAAElFTkSuQmCC" />
+  </view>
+</view>
+
+<view wx:if="{{showType === 5}}" class="video-cover-wrap">
+  <video
+      id="myVideo"
+      class="video-player"
+      src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/videos/1660036244586317.mp4" 
+      binderror="videoErrorCallback" 
+      show-center-play-btn="{{false}}"
+      show-play-btn="{{true}}" 
+      show-fullscreen-btn="{{false}}"
+      controls="{{true}}"
+    >
+    </video>
+    <view class="video-close-btn">
+      <image bindtap="closeCover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAllBMVEX///8kIyOwsLBLS0s9PT37+/u0tLT19fUrKysnJydDQ0NHR0dJSUklJSU1NTXZ2dlQUFBZWVnBwcHFxcXIyMhAQECZmZm4uLi8vLyKioqbm5vs7OwvLy9VVVWlpaU5OTlXV1ehoaHT09Po6OgyMjI3Nzeenp6oqKirq6vk5OQ8OzvOzs7e3t5/f3+Tk5NhYWFvb28iIiJznQh7AAAAMXRSTlOZ/rPj7JqxnPj76Obk/fKk4Nutq6rqvLCuwruf9t2379y4p6D08Lq2taLtqKPIv9bPXhBALQAAA3RJREFUeNrswQEBAAAAgqD+r26IwAAAAAAAAAAAAICsU19nywkCQRSGW2SQVVEUSYxLEvelKuf9Xy7XPagw5ZTT/Ldu9ZWMHgKymfLIUfvQ6kePkg9yUpGgZ1EyWUZwIRmUO8CipPIBuJBUa8CiZLEBXEjUKunBosTzASeSVQjAnuTUB5xIihSwKKnyCE4kty/AomQ6A+tG7+oPsCgZjTOwInpbfYuSwAcvndDj5EoWOXhfB3qWUIkK+j3+PslB0dNkSn4S8NYVNSVRMh1HmqMcUGPyJHMfvGRKbZImWWzAC7+pXaIkyovBytKA2iZJctVfPDRxyJFUywis2d7onEuRFDNojoLMkiG56vsqLMk0CRLvzr5yn7nkt7avjiQhQ4kK8ow/P14NSERmkksM3lnCdWUuuej7algK+T7MJIGQffWqZLGUsq9ekigvAStLPJJWG8koBW84J3k1SyabCKzzp6Bz3l4y8cGLZZ3ztpLfcQ+s8JOk9kzizbTH0ork9lhyqu0reb9XLSRqnkdgxd8iz3mTZBqD5xckvXuSH31fbUtF4qtLpO+r1pLavlpRN6pJtH117MB1xST320n+/zCQrGXuq2ZJV/aVoSTcU9e6J8lSifcfTeWotQ2oi4XQqzp1zv/Zt6OchKEoCMM/lFrU0po2UKmGKIoEVAz735yp0Qd7jm83F6dhdvCFkNxO5vxkPTcQtT/6d09tf5HR/366/91fDUDS9dQDkKQXyew4BMm6+44agKTrqYcg+doBDEBie+pEUeLsAMYoSt5yZwcgKKn6O4BJmyEo8XtqPcnO66kFJf331SivQFDi7gD0JGljdgCPGYKSV9NTV4CexO2pBSW2p64BPYm7A9CTpOP8aHtqQUl53e+pG0BPUj04e2pBya15X9WAnsTuqVsQlNgdQAOCkl3S76nHIChpbpw9taCknns7AD2JuVe7b1MEJfZerQb0JOY7aroFPYl/ryYoWV9592p6EnOvtllkCEr8ezU9iXuvJihpQ96rWcmKWPlweuqAkiOxsit+v0teMgJKJguipSzMvVowyexAjFjJtIWAks3yiQgxklFeQ0DJ84rIKQvTUweQXL5nxE5ZhL1X6yT7LTFiJfsKCChZcpKUge/VksMdp0nJOed8tgeHBAAAAACC/r/2hBEAAAAAAAAAAACARRR59tksZB0sAAAAAElFTkSuQmCC" />
+    </view>
+</view>

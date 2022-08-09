@@ -1,0 +1,22 @@
+<view class="container" style="transform: {{width ? '' : 'rotate(90deg)'}};" catch:tap="">
+  <view
+    class="page_first"
+    style="width: {{width ? width / 2 + 'rpx' : cardWidth}};height:{{width ? height / 2 + 'rpx' : cardWidth}};">
+    <view>结婚相册</view>
+    <view>点击图片翻看</view>
+  </view>
+  <view
+    class="page_last"
+    style="width: {{width ? width / 2 + 'rpx' : cardWidth }};height:{{width ? height / 2 + 'rpx' : cardWidth}};">
+    <block wx:for="{{imgArr}}" wx:key="index">
+      <view
+        class="photo_item {{item.isturn?'left':'right'}} {{'zindex'+item.zIndex}}"
+        data-index="{{index}}"
+        catch:tap="setClass"
+        bindtransitionend="finish"
+      >
+        <image src="{{item.src}}" mode="aspectFill"></image>
+      </view>
+    </block>
+  </view>
+</view>

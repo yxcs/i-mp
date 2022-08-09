@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "page-turn": "../../components/page-turn/index"
+  }
+}

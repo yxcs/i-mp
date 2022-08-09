@@ -1,0 +1,356 @@
+<view class="wrap">
+  <scroll-view
+    class="scroll-wrap"
+    scroll-y="{{true}}"
+    enhanced="{{true}}"
+    show-scrollbar="{{false}}"
+    bindscrolltoupper="scrollToUpper"
+    bindscrolltolower="scrollToLower"
+    bindscroll="onScroll"
+    scroll-top="{{scrollTop}}">
+    <view class="content">
+      <image class="img-000001" src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000001.jpg" mode="widthFix" />
+      <view class="main-title">于晓超 & 王琳 | 婚礼邀请函</view>
+      <view class="main-title-small">于先生&王小姐<text>2022.09.21</text></view>
+      <view class="img-000003-wrap"></view>
+      <view class="in-word">
+        <view>“hello 这是一份心意满满的</view>
+        <view>婚礼邀请函</view>
+        <view>请您慢慢阅读，见证我们的爱情”</view>
+      </view>
+      <view class="arrow-down">
+        <image src="../../imgs/icon/da966c1f1ca945dd9cde6af6e0374936.png" />
+      </view>
+      <view class="in-title">WEDDING  INVITATION</view>
+      <view class="line"></view>
+      <view class="in-sub-title">WE  ARE  MARRIED</view>
+      <view class="in-description">To have life henceforth,the poem of new joys</view>
+      <view class="in-img"><image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000005.jpg" mode="widthFix" /></view>
+      <view class="in-word-1">D&W | WEDDING | 2022/09/21</view>
+      <view class="in-img-1"><image src="../../imgs/icon/20075e4f55094cafaf870bdf879baf70.png" /></view>
+      <view class="in-word-1">
+        <view class="in-word-1-1">致所有的亲朋好友：</view>
+        <view class="in-word-1-2">嗨，当你看到这里的时候</view>
+        <view class="in-word-1-2">我们的婚礼已经进入倒计时啦！</view>
+        <view class="in-word-1-3">以前我觉得</view>
+        <view class="in-word-1-2">婚礼是一则官方公告</view>
+        <view class="in-word-1-2">后来我才明白</view>
+        <view class="in-word-1-2">这是一场人生中为数不多的相聚</view>
+        <view class="in-word-1-2">是千里迢迢的奔赴</view>
+        <view class="in-word-1-4">是不计得失的支持</view>
+        <view class="in-word-1-2">愿看到这段文字的你们</view>
+        <view class="in-word-1-2">所爱之人皆为爱你之人</view>
+        <view class="in-word-1-2">平安喜乐</view>
+        <view class="in-word-1-2">一生顺遂</view>
+      </view>
+      <view class="in-img"><image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000006.jpg" mode="widthFix" /></view>
+      <view class="inner-wrap">
+        <view class="short-line"></view>
+        <view class="avatar-wrap">
+          <image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000007.jpg" mode="aspectFill" />
+          <image class="avatar-girl" src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000008.jpg" mode="aspectFill" />
+        </view>
+        <view class="in-word-2">
+          <text>新郎：于晓超</text>
+          <image src="../../imgs/icon/cc80f994799649bd84b65084c39acad6.gif" />
+          <text>新娘：王琳</text>
+        </view>
+        <view class="in-word">
+          <view>诚邀您及家人共同出席我们的婚礼</view>
+          <view>见证我们的幸福</view>
+        </view>
+        <view class="dots"><image src="../../imgs/icon/dots.png" /></view>
+        <view class="in-img"><image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000009.jpg" mode="widthFix" /></view>
+        <view class="calendar-wrap">
+          <view class="calendar-content">
+            <view class="calendar-title">
+              <text>09</text>
+              <text>2022</text>
+            </view>
+            <view class="calendar-tool-title">
+              <view class="calendar-bar"></view>
+              <view class="calendar-tool-txt">
+                <view class="calendar-tool-item">周日</view>
+                <view class="calendar-tool-item">周一</view>
+                <view class="calendar-tool-item">周二</view>
+                <view class="calendar-tool-item">周三</view>
+                <view class="calendar-tool-item">周四</view>
+                <view class="calendar-tool-item">周五</view>
+                <view class="calendar-tool-item">周六</view>
+              </view>
+              <view class="calendar-date-numebr">
+                <view></view>
+                <view></view>
+                <view></view>
+                <view>1</view>
+                <view>2</view>
+                <view>3</view>
+                <view>4</view>
+                <view>5</view>
+                <view>6</view>
+                <view>7</view>
+                <view>8</view>
+                <view>9</view>
+                <view>10</view>
+                <view>11</view>
+                <view>12</view>
+                <view>13</view>
+                <view>14</view>
+                <view>15</view>
+                <view>16</view>
+                <view>17</view>
+                <view>18</view>
+                <view>19</view>
+                <view>20</view>
+                <view class="current-date">
+                  <view>21</view>
+                  <image src="../../imgs/icon/calen_heart_1.png" />
+                </view>
+                <view>22</view>
+                <view>23</view>
+                <view>24</view>
+                <view>25</view>
+                <view>26</view>
+                <view>27</view>
+                <view>28</view>
+                <view>29</view>
+                <view>30</view>
+              </view>
+            </view>
+          </view>
+          <view class="calendar-left-bar"></view>
+          <view class="calendar-left-bar calendar-left-bar-bottom"></view>
+        </view>
+        <view class="in-img-icon-2">
+          <image src="../../imgs/icon/41ebbc9aa34b4c9bb95010fe8cd4b961.png" />
+        </view>
+        <view class="in-img"><image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000010.jpg" mode="widthFix" /></view>
+        <view class="in-word">
+          <view>2018到2022</view>
+          <view>我们从相识、相知到相恋</view>
+          <view>不知不觉已经四年多了</view>
+          <view>有些人觉得四年很长</view>
+          <view>有些人会问我们如何保持恋爱的新鲜感</view>
+          <view>其实对我们来说</view>
+          <view>四年，只是一个开始</view>
+          <view>毕竟我们是打算要过一辈子的呀</view>
+          <view class="return-line">所以，我们决定</view>
+          <view>于2022年07月27日结为夫妻</view>
+          <view>成为彼此生命中最重要的人之一</view>
+        </view>
+        <view class="img-split-wrap">
+          <view class="img-split-left">
+            <image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000011.jpg" mode="widthFix" />
+            <image class="img-split-marry" src="../../imgs/icon/WX20220807-234626@2x.png" />
+          </view>
+          <view class="img-split-right">
+            <view class="img-split-line"></view>
+            <image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000012.jpg" mode="widthFix" />
+          </view>
+        </view>
+        <view class="in-word-right">
+          <view>总有些美好的际遇</view>
+          <view>比如说当我遇见你</view>
+          <view>犹记得2018年的夏天</view>
+          <view>惊鸿一瞥是你 怦然心动是你</view>
+          <view>有且仅有一个你</view>
+        </view>
+        <view class="in-icon-img-03">
+          <image webp="{{true}}" src="../../imgs/icon/4277d11b4ba743a0b1335dd886a55cde.webp" />
+        </view>
+        <view class="in-img"><image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000013.jpg" mode="widthFix" /></view>
+
+        <view class="in-about-title">
+          <image src="../../imgs/icon/a0d3bc4b52674431ae23f30b14648473.gif" />
+          <text>关于我们</text>
+        </view>
+
+        <view class="in-word">
+          <view>我们一起走过2018 2019 2021 2022</view>
+          <view>先成为彼此的朋友</view>
+          <view>又成为彼此的爱人</view>
+          <view>我们很幸运遇到彼此</view>
+        </view>
+
+        <view class="img-card-wrap">
+          <view class="img-card-title">“当喜欢和合适撞个满怀”</view>
+          <view class="img-card-bg">
+            <image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000014.jpg" mode="widthFix" />
+          </view>
+          <view class="img-card-pad"></view>
+          <view class="img-card-txt">
+            <view>Happy</view>
+            <view>We‘re</view>
+            <view>married</view>
+          </view>
+          <view class="img-card-cover">
+            <image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000015.jpg" mode="widthFix" />
+          </view>
+        </view>
+      </view>
+
+      <view class="in-img-icon-04">
+        <image src="../../imgs/icon/ab783ee38dcb405e8bcd93d42747dabd.jpeg" />
+      </view>
+
+      <view class="in-word">
+        <view>2018 夏 / 相遇</view>
+        <view>“穿过人间隙流 我们在夏之微雨时相遇”</view>
+      </view>
+      <view class="in-img"><image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000016.jpg" mode="widthFix" /></view>
+      <view class="in-word">
+        <view>2022.06.14 / 领证</view>
+        <view>“平凡的一天被我们赋予了特殊的意义”</view>
+      </view>
+      <view class="in-img"><image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000017.jpg" mode="widthFix" /></view>
+      <view class="in-word">
+        <view>2022.07.27 / 婚礼</view>
+        <view>“谨以白头之约 书向鸿笺”</view>
+        <view>“好将红叶之盟 载明鸳谱”</view>
+      </view>
+      <view class="in-img"><image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000018.jpg" mode="widthFix" /></view>
+      <view class="in-word">
+        <view>给你我平平淡淡的等待和守候</view>
+        <view>给你我轰轰烈烈的渴望和温柔</view>
+        <view>给你我百转千回的喜乐和忧愁</view>
+        <view>给你我微不足道 所有的所有</view>
+      </view>
+      <view class="img-two-column">
+        <view class="img-two-column-left">
+          <image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000019.jpg" mode="widthFix" />
+        </view>
+        <view class="img-two-column-right">
+          <image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000020.jpg" mode="widthFix" />
+        </view>
+      </view>
+      <view class="in-word">
+        <view>“我们决定陪伴彼此度过漫长岁月”</view>
+        <view>比起恋人我们更像是地球上的另一个自己</view>
+        <view>拥有不需磨合的默契和一致的三观</view>
+        <view>我们确定</view>
+        <view>他/她就是对的人</view>
+      </view>
+
+      <view class="in-img-icon-05">
+        <image src="../../imgs/icon/0589ff43a6cd4857bad178c222c4bd2a.gif" />
+      </view>
+      <view class="in-img"><image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000021.jpg" mode="widthFix" /></view>
+
+      <view class="in-word">
+        <view>今后的日子里我们将</view>
+        <view>For better for worse</view>
+        <view>荣辱与共</view>
+        <view>To love to cherish</view>
+        <view>生死相依</view>
+      </view>
+
+      <view class="img-two-column-h">
+        <view class="img-two-column-h-left"><image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000022.jpg" mode="widthFix" /></view>
+        <view class="img-two-column-h-right"><image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000023.jpg" mode="widthFix" /></view>
+      </view>
+      <view class="in-img"><image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000024.jpg" mode="widthFix" /></view>
+
+      <view class="in-img-icon-06">
+        <image src="../../imgs/icon/a0d3bc4b52674431ae23f30b14648473.gif" />
+      </view>
+
+      <view class="main-message">
+        <view class="main-message-title">| 婚礼时间 | Time</view>
+        <view>2022年09月21日 11时18分 </view>
+        <view>农历：八月廿六（星期三） </view>
+        <view class="main-message-title">| 婚礼地址 | Address</view>
+        <view>辽源市，凌云乡，三良村五组 </view>
+      </view>
+
+      <view class="img-mask-01"></view>
+
+      <view class="in-img-full"><image src="cloud://develop-6fbae1.6465-develop-6fbae1-1257634907/marry/home/000025.jpg" mode="widthFix" /></view>
+
+      <view class="phone-call">
+        <view class="phone-img phone-img-left" bind:tap="goToMakePhoneCall" data-phone="13101200725">
+          <image src="../../imgs/icon/f741ae5f4739429b8fa7410b9321096a.png" />
+          <text>— 于晓超 —</text>
+        </view>
+        <view class="phone-img" bind:tap="goToMakePhoneCall" data-phone="19962820409">
+          <image src="../../imgs/icon/618045f8f851485e8778847667d3e280.png" />
+          <text>— 王 琳 —</text>
+        </view>
+      </view>
+
+      <view class="we-balabala">
+        <view class="we-balabala-title">新人碎碎念：</view>
+        <view class="in-word">
+          <view>婚礼全程会有摄像和摄影</view>
+          <view>大家带上最美丽/最帅气的自己哟</view>
+          <view>如果拍摄了新娘子的照片</view>
+          <view>麻烦把她P美一些~</view>
+          <view>（新娘偶像包袱很重haha....）</view>
+        </view>
+        <view class="we-balabala-icon">
+          <image src="../../imgs/icon/9f8ad7c8140b4570964625c030b32dad.png" />
+        </view>
+      </view>
+
+      <view class="in-img-icon-07">
+        <image src="../../imgs/icon/2460633e836647c2b17c6fd62c81b442.gif" />
+      </view>
+      <view class="in-word">
+        <view>清风徐来，云霞出岫</view>
+        <view>我们的故事才写了开头</view>
+        <view>感谢您不远千里来到这里</view>
+        <view>与我们共同分享这美妙的一天~</view>
+        <view>您的祝福将伴随我们开启新的人生篇章</view>
+        <view>2022.09.21</view>
+        <view>期待您的到来</view>
+      </view>
+      <view class="end-thanks">THANKS</view>
+
+      <view class="in-img-icon-08">
+        <image src="../../imgs/icon/ce3583759ecb406da347351f1bd301dd.gif" />
+      </view>
+
+      <view class="end-padding"></view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="music {{ isPlay ? '' : 'music-pause' }}" bind:tap="audioPlay">
+  <image class="music-icon" src="../../imgs/icon/music_icon.png" />
+  <image class="music-play" src="../../imgs/icon/music_play.png" />
+</view>
+
+<view wx:if="{{isShowMessage}}" class="message-list-wrap" style="bottom: {{safeHeight + 64}}rpx;">
+  <view class="message-list {{currentOffset ? 'message-list-animate' : ''}}" style="top: -{{currentOffset}}rpx;">
+    <view wx:for="{{mList}}" wx:key="_id" class="message-list-item">{{item.bensonNickName}}：{{item.bensonWord}}</view>
+  </view>
+</view>
+
+<view class="bottom-tool-bar" style="padding-bottom: {{safeHeight}}rpx;">
+  <view class="message-ipt" bind:tap="openMessageModal">
+    <text>留下您的祝福...</text>
+    <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAzCAMAAAAElGBiAAAAS1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////+DmQsHAAAAGHRSTlMA4LyJgGHw0BDAsKAgQJBwMFBH6aV4xdj5hWvuAAABxElEQVRIx7WVjbKCIBCFQUUF/zWL93/Sy4G8S5CKTZ2ZAnE/YFncZf+qhZKl3lcl+45FahudoLIIsF4nik8eVVcYkkNXs32NU89hNhBWghrZuQQsG381wZJUS9iSbxNLFc6vQ6dNXY12J9GRro0llHLtomhet87kmnYby7OnhOmbFysGMxO3IGbKzIZ/yJk8lZsHsyGOQfN4Y8GCjCnyLuBm196C5eyEHdwLrx3s3SyVmbLEU3i5BhixdxzXL8oYqdC6+AVnztVsssqy6pSjc+F2nFvn8jNu/pBDrDm0JvpHHHe9SxxifCeOc8AL58sZl5FBmn/EVTkkrnEPDV2PO/+Qu2UQNofudl+g/IgjLzczTt3fcTCOE/V3OPe9xxyHtvsC3YPvXUXZk7ZA/sX5ZfDz2Yzf/YRDPqspf1ot2upxxBVuJfkmga4HXFs6zzq/Pqz4fNTM9jmqC6gwe8VvzfN5px7ZClOm1j/lVdzWVtE2ARMcluSqre9KjIdLda6+9/5Yr1/V+MdAih0ag/eCjsGnipqFagdVRWDjMbKZEmq47p5Yw5JEoRnZQFgqWMIZwpI1Iqb2Rn0CVjW7rImwaxLAvq0/rLdLrUPFh+0AAAAASUVORK5CYII=" />
+    <button wx:if="{{!isAuth}}" class="message-ipt-btn" bindtap="getUserProfile"></button>
+  </view>
+  <view class="tool-zan" bind:tap="insertZanNumber">
+    <image src="data:image/png;base64,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" />
+    <view class="zan-number">
+      <text class="zan-number-txt">{{zanNumber}}</text>
+    </view>
+  </view>
+  <view class="tool-albums" bind:tap="goToAlbums">相册</view>
+  <view class="tool-clear" bind:tap="onClearMessage">{{ isShowMessage ? '清屏' : '弹幕' }}</view>
+</view>
+
+<view wx:if="{{isModalShow}}" class="message-modal" catch:tap="onCloseModal">
+  <view class="modal-content" catch:tap="catchEvent">
+    <view class="modal-title">
+      <view class="modal-title-padding"></view>
+      <view>送祝福</view>
+      <image bindtap="onCloseModal" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAllBMVEX///8kIyOwsLBLS0s9PT37+/u0tLT19fUrKysnJydDQ0NHR0dJSUklJSU1NTXZ2dlQUFBZWVnBwcHFxcXIyMhAQECZmZm4uLi8vLyKioqbm5vs7OwvLy9VVVWlpaU5OTlXV1ehoaHT09Po6OgyMjI3Nzeenp6oqKirq6vk5OQ8OzvOzs7e3t5/f3+Tk5NhYWFvb28iIiJznQh7AAAAMXRSTlOZ/rPj7JqxnPj76Obk/fKk4Nutq6rqvLCuwruf9t2379y4p6D08Lq2taLtqKPIv9bPXhBALQAAA3RJREFUeNrswQEBAAAAgqD+r26IwAAAAAAAAAAAAICsU19nywkCQRSGW2SQVVEUSYxLEvelKuf9Xy7XPagw5ZTT/Ldu9ZWMHgKymfLIUfvQ6kePkg9yUpGgZ1EyWUZwIRmUO8CipPIBuJBUa8CiZLEBXEjUKunBosTzASeSVQjAnuTUB5xIihSwKKnyCE4kty/AomQ6A+tG7+oPsCgZjTOwInpbfYuSwAcvndDj5EoWOXhfB3qWUIkK+j3+PslB0dNkSn4S8NYVNSVRMh1HmqMcUGPyJHMfvGRKbZImWWzAC7+pXaIkyovBytKA2iZJctVfPDRxyJFUywis2d7onEuRFDNojoLMkiG56vsqLMk0CRLvzr5yn7nkt7avjiQhQ4kK8ow/P14NSERmkksM3lnCdWUuuej7algK+T7MJIGQffWqZLGUsq9ekigvAStLPJJWG8koBW84J3k1SyabCKzzp6Bz3l4y8cGLZZ3ztpLfcQ+s8JOk9kzizbTH0ork9lhyqu0reb9XLSRqnkdgxd8iz3mTZBqD5xckvXuSH31fbUtF4qtLpO+r1pLavlpRN6pJtH117MB1xST320n+/zCQrGXuq2ZJV/aVoSTcU9e6J8lSifcfTeWotQ2oi4XQqzp1zv/Zt6OchKEoCMM/lFrU0po2UKmGKIoEVAz735yp0Qd7jm83F6dhdvCFkNxO5vxkPTcQtT/6d09tf5HR/366/91fDUDS9dQDkKQXyew4BMm6+44agKTrqYcg+doBDEBie+pEUeLsAMYoSt5yZwcgKKn6O4BJmyEo8XtqPcnO66kFJf331SivQFDi7gD0JGljdgCPGYKSV9NTV4CexO2pBSW2p64BPYm7A9CTpOP8aHtqQUl53e+pG0BPUj04e2pBya15X9WAnsTuqVsQlNgdQAOCkl3S76nHIChpbpw9taCknns7AD2JuVe7b1MEJfZerQb0JOY7aroFPYl/ryYoWV9592p6EnOvtllkCEr8ezU9iXuvJihpQ96rWcmKWPlweuqAkiOxsit+v0teMgJKJguipSzMvVowyexAjFjJtIWAks3yiQgxklFeQ0DJ84rIKQvTUweQXL5nxE5ZhL1X6yT7LTFiJfsKCChZcpKUge/VksMdp0nJOed8tgeHBAAAAACC/r/2hBEAAAAAAAAAAACARRR59tksZB0sAAAAAElFTkSuQmCC" />
+    </view>
+    <view class="modal-input">
+      <input value="{{bensonWord}}" bindinput="onBensonInput" auto-focus placeholder="输入祝福"/>
+    </view>
+    <view class="modal-submit-btn" bind:tap="insertMessageList">发送</view>
+  </view>
+</view>
